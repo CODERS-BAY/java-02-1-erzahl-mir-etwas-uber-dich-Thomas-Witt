@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class TellMeSomething {
+    public static void main(String[] args) {
+
+        System.out.println("What is your first name?");
+        Scanner scanner = new Scanner(System.in);
+        String firstName = scanner.nextLine();
+        System.out.println("Thank You! What is your last name?");
+        String lastName = scanner.nextLine();
+        System.out.println("Alrighty. And how old are you?");
+        int age = scanner.nextInt();
+        System.out.println("Excellent. And tell me, are you married?");
+        boolean married = scanner.nextBoolean();
+        System.out.println("Good. Last but not least: How tall are you (in meter of course. Nobody uses inch)?");
+        double height = scanner.nextDouble();
+
+
+
+
+        System.out.println(firstName + lastName + age + married + height);
+    }
+}
