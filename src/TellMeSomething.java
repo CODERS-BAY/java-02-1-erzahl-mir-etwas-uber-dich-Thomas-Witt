@@ -15,7 +15,6 @@ public class TellMeSomething {
         System.out.println("Good. Last but not least: How tall are you (in meter of course. Nobody uses inch)?");
         double height = scanner.nextDouble();
 
-
         System.out.printf("You told me, that your Name is %s %s, you are %s years old, you are ", firstName, lastName, age);
 
     if(!married)
