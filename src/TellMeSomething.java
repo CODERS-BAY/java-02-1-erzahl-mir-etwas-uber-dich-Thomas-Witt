@@ -10,14 +10,17 @@ public class TellMeSomething {
         String lastName = scanner.nextLine();
         System.out.println("Alrighty. And how old are you?");
         int age = scanner.nextInt();
-        System.out.println("Excellent. And tell me, are you married?");
+        System.out.println("Excellent. And tell me, are you married? (type 'true' if you are, 'false' if you are not.)");
         boolean married = scanner.nextBoolean();
         System.out.println("Good. Last but not least: How tall are you (in meter of course. Nobody uses inch)?");
         double height = scanner.nextDouble();
 
 
+        System.out.printf("You told me, that your Name is %s %s, you are %s years old, you are ", firstName, lastName, age);
 
+    if(!married)
+        System.out.print("not ");
 
-        System.out.println(firstName + lastName + age + married + height);
+        System.out.printf("married and you are %sm tall.", height); //ist %s für alle Platzhalter zu verwenden, oder gibe es für Zahlen zum Beispiel einen anderen Platzhalter? (z.B.: %n für number oder so?)
     }
 }
